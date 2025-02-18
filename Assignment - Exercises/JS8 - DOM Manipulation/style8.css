@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    height: 100vh;
+    
+    background-image: url(bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.header {
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.5rem;
+}
+
+.button {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.counter {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+#counterText {
+    padding: 20px;
+    background-color: rgb(162, 77, 179);
+    text-align: center;
+    font-size: 5rem;
+    width: 250px;
+    border-radius: 15px;
+    color: rgb(255, 222, 255);
+}
+
+.button button {
+    padding: 10px 20px;
+    border-width: 5px;
+    border-radius: 8px;
+    font-size: 20px;
+    width: 100px;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    cursor: pointer;
+    transition: background-color 0.25s;
+}
+
+#subtract {
+    background-color: rgb(255, 110, 110);
+}
+#subtract:hover {
+    background-color: rgb(245, 47, 47);
+}
+
+#add {
+    background-color: rgb(129, 129, 255);
+}
+#add:hover {
+    background-color: rgb(78, 78, 253);
+}
+
+#reset {
+    font-size: 20px;
+    background-color: rgb(255, 255, 255);
+}
+#reset:hover {
+    background-color: rgb(202, 202, 202);
+}
