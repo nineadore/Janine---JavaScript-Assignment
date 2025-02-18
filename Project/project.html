@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissor Game</title>
+    <link rel = "stylesheet" href = "project.css">
+    <link rel = "icon" type = "image/png" href = "images/webIcon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class = "gameContainer">
+        <h1>Rock, Paper, Scissors</h1>
+
+        <div class = "scoreBoard">
+            <p>Wins: <span id = "wins">0</span></p>
+            <p>Losses: <span id = "losses">0</span></p>
+            <p>Ties: <span id = "ties">0</span></p>
+        </div>
+
+        <div class = "gameResult"> 
+
+            <h2 id = "textDisplay"></h2> 
+                    <!--Text Indicated: Click the "Start Game" button to start. -->
+                    <!--Text Indicated: Choose your weapon! -->
+                    <!--Text Indicated: Click another weapon for the next round. -->
+
+            <div class = "weaponUsed">
+                <div id = "playerDisplay">PLAYER: </div> <!-- To show what weapon the player used -->
+                <div id = "computerDisplay">COMPUTER: </div> <!-- To show what weapon the computer used -->
+            </div>
+
+            <div class = "weaponUsedContainer">
+                <div class = "userChoice" id = "userChoice">
+                    <img src = "./images/icon-user.png"
+                         alt = "user"
+                         class = "choiceImg"> 
+                </div>
+                <h3>VS</h3>
+                <div class = "computerChoice" id = "computerChoice">
+                    <img src = "images/icon-computer.png"
+                         alt = "computer"
+                         class = "choiceImg">
+                </div>
+            </div>
+        </div>
+
+        <h2 id = "resultDisplay"></h2> <!-- To display the result. (You Won!, You Lose!, It's a TIE)-->
+
+        <!-- Buttons are disabled until the user decided to click the Start Game Button -->
+        <div class = "choices">
+            <button onclick = "playGame('ROCK')" disabled>
+                <img src = "./images/icon-rock.png"
+                     alt = "Rock"
+                    class = choiceImg>
+            </button>
+
+            <button onclick = "playGame('PAPER')"disabled>
+                <img src = "./images/icon-paper.png"
+                     alt = "Paper"
+                     class = choiceImg>
+            </button>
+
+            <button onclick = "playGame('SCISSORS')"disabled>
+                <img src = "./images/icon-scissors.png"
+                     alt = "Scissor"
+                     class = choiceImg>
+            </button>
+        </div>
+
+        <button id = "startBtn">Start Game</button>
+        <button id = "resetBtn">Reset Game</button>
+    </div>
+
+    <script src = "project.js"></script> 
+</body>
+</body>
+</html>
